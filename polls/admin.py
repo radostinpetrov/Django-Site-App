@@ -1,20 +1,16 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Choice, Question  # this line added
+from . import models
 
 
-class ChoiceInline(admin.TabularInline):
-    model = Choice
-    extra = 3
+class TodoListAdmin(admin.ModelAdmin):
+    list_display = ("title", "created", "due_date")
 
 
-class QuestionAdmin(admin.ModelAdmin):
-    fieldsets = [
-        (None, {'fields': ['question_text']}),
-        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
-    ]
-    inlines = [ChoiceInline]
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ("name",)
 
 
-admin.site.register(Question, QuestionAdmin)  # this line added
+admin.site.register(models.TodoList, TodoListAdmin)
+admin.site.register(models.Category, CategoryAdmin)
