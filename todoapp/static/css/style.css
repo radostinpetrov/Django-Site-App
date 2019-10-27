@@ -4,10 +4,12 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+
 /* app */
 html {
     font-size: 100%;
 }
+
 body {
     background: #b1f6cb;
     font-family: 'Open Sans',sans-serif;
@@ -21,6 +23,7 @@ body {
     -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
             box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
+
 .row {
     display: block;
     padding: 10px;
@@ -29,13 +32,16 @@ body {
     clear: both;
     overflow: hidden;
 }
+
 .half {
     width: 50%;
     float: left;
 }
+
 .content {
     background: #fff;
 }
+
 /* logo */
 h1 {
     font-family: 'Rokkitt', sans-serif;
@@ -44,6 +50,7 @@ h1 {
     font-weight: 400;
     margin: 0;
 }
+
 .tagline {
     margin-top: -10px;
     text-align: center;
@@ -51,8 +58,9 @@ h1 {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #777;
+    color: #777; 
 }
+
 /* inputs */
 .inputContainer {
     height: 60px;
@@ -60,13 +68,16 @@ h1 {
     position: relative;
     overflow: hidden;
 }
+
 .inputContainer.last {
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 20px;
 }
+
 .inputContainer.half.last.right {
     border-left: 1px solid #efefef;
 }
+
 input[type="date"], input[type="text"], select {
     height: 100%;
     width: 100%;
@@ -86,13 +97,16 @@ input[type="date"], input[type="text"], select {
     -webkit-transition: background 0.3s;
             transition: background 0.3s;
 }
+
 input[type="date"] {
     cursor: pointer;
 }
+
 input[type="date"]:focus, input[type="text"]:focus, select:focus {
     outline: none;
     background: #ecf0f1;
 }
+
 ::-webkit-input-placeholder {
     color: lightgrey;
     font-weight: normal;
@@ -114,14 +128,17 @@ input:-moz-placeholder {
     font-weight: normal;
     transition: all 0.3s;
 }
+
 input:focus::-webkit-input-placeholder {
     color: #95a5a6;
     font-weight: bold;
 }
+
 input:focus::-moz-input-placeholder {
     color: #95a5a6;
     font-weight: bold;
 }
+
 .inputContainer label {
     padding: 5px 20px;
     font-size: 11px;
@@ -131,6 +148,7 @@ input:focus::-moz-input-placeholder {
     display: block;
     position: absolute;
 }
+
 button {
     font-family: 'Open Sans', sans-serif;
     background: transparent;
@@ -148,31 +166,38 @@ button {
     padding-left: 30px;
     padding-right: 15px;
 }
+
 .icon {
     position: absolute;
     top: 30%;
     left: 10px;
     font-size: 20px;
 }
+
 .taskAdd {
     background: #444;
     padding-left: 31px;
 }
+
 .taskAdd:hover {
     background: #303030;
 }
+
 .taskDelete {
     background: #e74c3c;
     padding-left: 30px;
 }
+
 .taskDelete:hover {
     background: #c0392b;
 }
+
 /* task styles */
 .taskList {
     list-style: none;
     padding: 0 20px;
 }
+
 .taskItem {
     border-top: 1px solid #e5e5e5;
     padding: 15px 0;
@@ -181,16 +206,20 @@ button {
     font-size: 14px;
     letter-spacing: 0.5px;
 }
+
 .taskList .taskItem:nth-child(even) {
     background: #fcfcfc;
 }
+
 .taskCheckbox {
     margin-right: 1em;
 }
+
 .complete-true {
     text-decoration:  line-through;
     color: #bebebe;
 }
+
 .taskList .taskDate {
     color: #95a5a6;
     font-size: 10px;
@@ -199,10 +228,12 @@ button {
     display: block;
     margin-left: 41px;
 }
+
 .fa-calendar {
     margin-right: 10px;
     font-size: 16px;
 }
+
 [class*='category-'] {
     display: inline-block;
     font-size: 10px;
@@ -218,24 +249,31 @@ button {
     text-transform: uppercase;
     margin-right: 20px;
 }
+
 .category- {
     background: transparent;
 }
+
 .category-Personal {
     background: #2980b9;
 }
+
 .category-Work {
     background: #8e44ad;
 }
+
 .category-School {
     background: #f39c12;
 }
+
 .category-Cleaning {
     background: #16a085;
 }
+
 .category-Other {
     background: #d35400;
 }
+
 footer {
     text-align: center;
     font-size: 11px;
@@ -243,6 +281,7 @@ footer {
     text-transform: uppercase;
     color: #777;
 }
+
 footer a {
     color: #f39c12;
 }
@@ -258,19 +297,24 @@ footer a {
     height: 19px;
     vertical-align: middle;
 }
+
 .taskCheckbox:focus {
     outline: none;
 }
+
 .taskCheckbox:before, .taskCheckbox:checked:before {
     font-family: 'FontAwesome';
     color: #444;
     font-size: 20px;
     -webkit-transition: all 0.3s;
             transition: all 0.3s;
+
 }
+
 .taskCheckbox:before {
     content: '\f096';
 }
+
 .taskCheckbox:checked:before {
     content: '\f14a';
     color: #16a085;
@@ -283,6 +327,7 @@ footer a {
     padding-left: 16.5px; /*specific positioning due to difficult behavior of select element*/
     background: #fff;
 }
+
 .selectArrow {
     position: absolute;
     z-index: 10;
@@ -292,6 +337,7 @@ footer a {
     color: #777;
     pointer-events: none;
 }
+
 .taskCategory option {
     background: #fff;
     border: none;
