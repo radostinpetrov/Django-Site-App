@@ -21,7 +21,7 @@ class TodoList(models.Model):
     content = models.TextField(blank=True)  # a text field
     created = models.DateField(default=timezone.now().strftime('%Y-%m-%d'))
     due_date = models.DateField(default=timezone.now().strftime('%Y-%m-%d'))
-    category = models.ForeignKey(Category, default="general", on_delete=models.DO_NOTHING)
+    category = models.ForeignKey(Category, default='general', on_delete=models.DO_NOTHING)
 
     class Meta:
         ordering = ["-created"]

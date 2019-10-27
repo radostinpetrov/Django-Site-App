@@ -5,7 +5,7 @@ from todoapp.views import index
 from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index, name="TodoList"),
+    url(r'^$', index, name='home'),
     path('', views.index)
 ]
 
