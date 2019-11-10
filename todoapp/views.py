@@ -10,7 +10,7 @@ from .forms import CityForm
 def index(request):
     todos = TodoList.objects.all()
     categories = Category.objects.all()
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid=0218a849f7ee0abcbf43c55b4b0878bc'  # API url
+    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units=metric'  # API url
 
     if request.method == 'POST':  # checking if the request method is a POST
         form = CityForm(requests.post)
