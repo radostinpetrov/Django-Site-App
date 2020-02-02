@@ -5,8 +5,6 @@ attrs==19.1.0
 Babel==2.7.0
 Beaker==1.10.0
 beautifulsoup4==4.8.1
-blivet==3.1.6
-blivet-gui==2.1.12
 bodhi==4.1.0
 bodhi-client==4.1.0
 Brlapi==0.7.0
